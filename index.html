@@ -1,1 +1,83 @@
+<!DOCTYPE html>
 
+<link rel="stylesheet" href="stylesheet.css">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+</style>
+
+<head> 
+    <title> Rock-Paper-Scissors </title>
+    <h1> Rock-Paper-Scissors </h1>
+</head>
+
+<main>
+
+    <script>
+
+
+        function roundStart() {  
+            let userChoice = prompt("Rock, paper, or scissors?", "Rock");
+            userChoice = userChoice.toLowerCase();
+
+            let cpuChoice = Math.round(Math.random() * 2) + 1;
+            if (cpuChoice == 1) {
+                cpuChoice = "rock"
+            }
+            else if (cpuChoice == 2) {
+                cpuChoice = "scissors"
+            }
+            else if (cpuChoice == 3) {
+                cpuChoice = "paper"
+            }
+             
+            console.log(userChoice);
+            console.log(cpuChoice);
+            
+
+            if (cpuChoice == userChoice ) { 
+                window.alert("You chose " + userChoice + " and the CPU chose " + cpuChoice + "\nTie!")
+            }
+            else if (cpuChoice == "rock" && userChoice == "scissors") {
+                window.alert("You chose " + userChoice + " and the CPU chose " + cpuChoice + "\nYou lose!")
+            }
+            else if (cpuChoice == "rock" && userChoice == "paper") {
+                window.alert("You chose " + userChoice + " and the CPU chose " + cpuChoice + "\nYou win!")
+            }
+            else if (cpuChoice == "scissors" && userChoice == "rock") {
+                window.alert("You chose " + userChoice + " and the CPU chose " + cpuChoice + "\nYou win!")
+            }
+            else if (cpuChoice == "scissors" && userChoice == "paper") {
+                window.alert("You chose " + userChoice + " and the CPU chose " + cpuChoice + "\nYou lose!")
+            }
+            else if (cpuChoice == "paper" && userChoice == "rock") {
+                window.alert("You chose " + userChoice + " and the CPU chose " + cpuChoice + "\nYou lose!")
+            }
+            else if (cpuChoice == "paper" && userChoice == "scissors") {
+                window.alert("You chose " + userChoice + " and the CPU chose " + cpuChoice + "\nYou win!")
+            }
+            else {
+                window.alert("Invalid choice, please try again.")
+            }
+        }
+
+
+    </script>
+
+    <body>
+        <p>
+            Scissors Paper Rock (also known by other orderings of the three items, with "rock" sometimes being called "stone", or as Rochambeau, roshambo, or ro-sham-bo)[1][2][3] is a hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "rock" (a closed fist), "paper" (a flat hand), and "scissors" (a fist with the index finger and middle finger extended, forming a V). "Scissors" is identical to the two-fingered V sign (also indicating "victory" or "peace") except that it is pointed horizontally instead of being held upright in the air.
+            <br>
+            <br>
+            A simultaneous, zero-sum game, it has only two possible outcomes: a draw, or a win for one player and a loss for the other. A player who decides to play rock will beat another player who has chosen scissors ("rock crushes scissors" or sometimes "blunts scissors"[4]), but will lose to one who has played paper ("paper covers rock"); a play of paper will lose to a play of scissors ("scissors cuts paper"). If both players choose the same shape, the game is tied and is usually immediately replayed to break the tie. The type of game originated in China and spread with increased contact with East Asia, while developing different variants in signs over time.
+            <br>
+            <br>
+            <button onclick="roundStart()">Play</button>
+        </p>
+    </body>
+
+
+
+
+
+</html>

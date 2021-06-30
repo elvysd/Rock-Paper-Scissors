@@ -1,1 +1,27 @@
-
+h1 {
+    font-size: 44px;
+    text-align: center;
+    background-color:darkslategray;
+    font-family: 'Roboto';
+    color: white;
+    padding: 5%;
+}
+p {
+    background-color: darkslategray;
+    height: 100%;
+    text-justify: newspaper;
+    font-family: 'Roboto';
+    color: white;
+    padding: 5%;
+}
+body {
+    background-color:rgb(36, 63, 63);
+}
+button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 1%;
+    border-radius: 15%;
+    border-style: none;
+}
